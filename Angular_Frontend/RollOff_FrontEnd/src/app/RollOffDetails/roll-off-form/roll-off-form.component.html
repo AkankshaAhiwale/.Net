@@ -1,7 +1,6 @@
-
+<!--
 <form>
-    <input type="hidden" name="country"
-[value]="service.formData.Country"/>
+    <input type="hidden" name="country" [value]="service.formData.Country"/>
 <div class="form-group">
     <label>GLOBAL GROUP ID :</label>
     <br>
@@ -23,3 +22,153 @@
     name="ename" #ename="ngModel" [(ngModel)]="service.formData.Name"/>
 </div>
 </form>
+-->
+<form feedbackform="ngForm">
+    <br>
+    <h4 class="text-center">Roll Off Request and Feedback</h4>
+    <div class="container p-2 center">
+        
+        <!--Section first-->
+    <div class="row">
+      <div class="container col">
+        <label><b>Name</b></label> 
+        <input type="text" class="form-control" placeholder="">
+      </div>
+      <div class="container col">
+        <label><b>Practice</b></label> 
+        <input type="text" class="form-control" placeholder="">
+      </div>
+      <div class="container col">
+        <label><b>Performance Issue</b></label>
+        <select class="form-control form-select" aria-label=".form-select-lg example">
+            <option selected>--Select--</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+      </div>
+      <div class="container col">
+        <label><b>Technical Skills</b></label>
+        <input type="text" class="form-control" placeholder="">
+      </div>
+    </div>
+    <br>
+    <!--Section 2-->
+    <div class="row">
+        <div class="container col">
+          <label><b>Local Grade</b></label> 
+          <input type="text" class="form-control" placeholder="">
+        </div>
+        <div class="container col">
+          <label><b>Roll-Off End Date</b></label> 
+          <input type="text" class="form-control" placeholder="">
+        </div>
+        <div class="container col">
+            <label><b>Resigned</b></label>
+            <select class="form-control form-select" aria-label=".form-select-lg example">
+                <option selected>--Select--</option>
+                <option value="1">Yes</option>
+                <option value="2">No</option>
+              </select>
+        </div>
+        <div class="container col">
+          <label><b>Communication</b></label>
+          <input type="text" class="form-control" placeholder="">
+        </div>
+      </div>
+      <br>
+      <!--Section 3-->
+    <div class="row">
+        <div class="container col">
+          <label><b>Primary Skills</b></label> 
+          <input type="text" class="form-control" placeholder="">
+        </div>
+        <div class="container col">
+            <label><b>Reasons for Roll-Off</b></label>
+            <select class="form-control form-select" aria-label=".form-select-lg example">
+                <option selected>--Select--</option>
+                <option value="1">Project Closure</option>
+                <option value="2">Maternity Leave</option>
+                <option value="2">Resigned</option>
+                <option value="2">Performance Issue</option>
+                <option value="2">HR Case</option>
+                <option value="2">People Skill</option>
+                <option value="2">Automation</option>
+                <option value="2">Quality</option>
+                <option value="2">New Delivery Model</option>       
+                <option value="2">Labour(Work Force Productivity)</option>
+                <option value="2">Client Budget Issues</option>                             
+              </select>
+        </div>
+        <div class="container col">
+          <label><b>Under Prohibition</b></label>
+          <select class="form-control form-select" aria-label=".form-select-lg example">
+            <option selected>--Select--</option>
+            <option value="1">Yes</option>
+            <option value="2">No</option>
+          </select>
+        </div>
+        <div class="container col">
+          <label><b>Role Competencies</b></label>
+          <input type="text" class="form-control" placeholder="">
+        </div>
+      </div>
+      <br>
+      <!--Section 4-->
+      <div class="row">
+        <div class="container col">
+          <label><b>Project Code</b></label> 
+          <input type="text" class="form-control" placeholder="">
+        </div>
+        <div class="container col">
+          <label><b>Other Reasons</b></label> 
+          <input type="text" class="form-control" placeholder="">
+        </div>
+        <div class="container col">
+          <label><b>Long Leave</b></label>
+          <select class="form-control form-select" aria-label=".form-select-lg example">
+            <option selected>--Select--</option>
+            <option value="1">Yes</option>
+            <option value="2">No</option>
+          </select>
+        </div>
+        <div class="container col">
+          <label><b>Remarks</b></label>
+          <input type="text" class="form-control" placeholder="">
+        </div>
+      </div>
+      <br>
+      <!--Section 5-->
+      <div class="row">
+        <div class="container col">
+          <label><b>Project Name</b></label> 
+          <input type="text" class="form-control" placeholder="">
+        </div>
+        <div class="container col">
+          <label><b>Is backfilled</b></label> 
+          <select class="form-control form-select" aria-label=".form-select-lg example">
+            <option selected>--Select--</option>
+            <option value="1">Yes</option>
+            <option value="2">No</option>
+          </select>
+        </div>
+        <div class="container col">
+          <label><b>Leave Type</b></label>
+          <select class="form-control form-select" aria-label=".form-select-lg example">
+            <option selected>--Select--</option>
+            <option value="1">Yes</option>
+            <option value="2">No</option>
+          </select>
+        </div>
+        <div class="container col">
+          <label><b>Relevant Experience in Years</b></label>
+          <input type="text" class="form-control" placeholder="">
+        </div>
+    </div>
+    <br>
+    <div class="text-center">
+        <button type="button" class="btn btn-success">Submit</button>
+    </div>
+</div>
+
+  </form>

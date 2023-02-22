@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { RollOffDetailsComponent } from './roll-off-details/roll-off-details.component';
@@ -19,13 +20,13 @@ const routes: Routes = [
     component: RollOffFormComponent
   },
   {
-    path: 'signUo',
+    path: 'signUp',
     component:SignUpComponent
   },
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes),FormsModule],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

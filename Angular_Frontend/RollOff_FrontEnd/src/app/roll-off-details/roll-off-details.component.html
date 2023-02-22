@@ -14,8 +14,7 @@
     </thead>
     <tbody>
       
-      <tr *ngFor='let n_data of newdata
-      | search: SearchText |paginate
+      <tr *ngFor='let n_data of newdata | search: SearchText |paginate
       : {
           itemsPerPage: tableSize,
           currentPage: page,
@@ -29,7 +28,7 @@
         <td>{{n_data.name}}</td>
         <td>{{n_data.email}}</td>
         <td>
-          <a  type="button" class="btn  btn-outline-info" href="roll-off-form">Roll Off Request</a>
+          <a  type="button" class="btn  btn-outline-info" href="roll-off-form">View Details</a>
           </td>
           <td></td>
         </tr>
